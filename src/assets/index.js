@@ -5,10 +5,10 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import play from "./play.png";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
+import next from "./tech/next-js.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -18,16 +18,18 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import express from "./tech/express.png";
+import python from "./tech/python.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import damex from "./company/damex.png";
+import corelab from "./company/corelab.png";
+import stylon from "./company/stylon.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import titan from "./titan.png";
+import mediaid from "./mediaid.png";
+import admin from "./admin.png";
+import coffee from "./coffee.png";
+import eCom from "./e-com.png";
 
 export {
 	backend,
@@ -35,11 +37,12 @@ export {
 	mobile,
 	web,
 	github,
+	play,
 	menu,
 	close,
 	css,
-	docker,
-	figma,
+	next,
+	python,
 	git,
 	html,
 	javascript,
@@ -49,12 +52,13 @@ export {
 	redux,
 	tailwind,
 	typescript,
-	threejs,
-	meta,
-	shopify,
-	starbucks,
-	tesla,
-	carrent,
-	jobit,
-	tripguide,
+	express,
+	stylon,
+	corelab,
+	damex,
+	mediaid,
+	titan,
+	admin,
+	coffee,
+	eCom,
 };

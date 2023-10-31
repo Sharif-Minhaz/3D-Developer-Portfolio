@@ -50,7 +50,7 @@ const About = () => {
 				variants={fadeIn("", "", 0.1, 1)}
 			>
 				I&apos;m a skilled software developer with experience in TypeScript and JavaScript,
-				and expertise in frameworks like React, Node.js, and Three.js. I&apos;m a quick
+				and expertise in frameworks like React, Node.js, and Next.js. I&apos;m a quick
 				learner and collaborate closely with clients to create efficient, scalable, and
 				user-friendly solutions that solve real-world problems. Let&apos;s work together to
 				bring your ideas to life!

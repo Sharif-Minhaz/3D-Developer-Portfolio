@@ -6,9 +6,9 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { textVariant, fadeIn } from "./../utils/motion";
-import { github } from "../assets";
+import { github, play } from "../assets";
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_link }) => {
 	return (
 		<motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
 			<Tilt
@@ -17,7 +17,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 					scale: 1,
 					speed: 450,
 				}}
-				className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+				className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full group"
 			>
 				<div className="relative w-full h-[230px]">
 					<img
@@ -34,7 +34,20 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 							<img
 								src={github}
 								alt="source code"
-								className="w-1/2 h-1/2 object-contain"
+								className="w-1/2 h-1/2 object-contain shadow"
+							/>
+						</div>
+					</div>
+
+					<div className="absolute inset-0 top-12 flex justify-end m-3 card-img_hover opacity-0 transition-all group-hover:opacity-100">
+						<div
+							onClick={() => window.open(live_link, "_blank")}
+							className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+						>
+							<img
+								src={play}
+								alt="source code"
+								className="w-[35%] h-[35%] object-contain"
 							/>
 						</div>
 					</div>
@@ -64,6 +77,7 @@ ProjectCard.propTypes = {
 	tags: PropTypes.array,
 	image: PropTypes.string,
 	source_code_link: PropTypes.string,
+	live_link: PropTypes.string,
 };
 
 const Works = () => {
@@ -95,4 +109,4 @@ const Works = () => {
 	);
 };
 
-export default SectionWrapper(Works, "works");
+export default SectionWrapper(Works, "work");

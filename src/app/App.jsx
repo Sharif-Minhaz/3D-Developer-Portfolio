@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+import { Toaster } from "sonner";
 import {
 	About,
 	Navbar,
@@ -29,6 +30,9 @@ const App = () => {
 					<StarsCanvas />
 				</div>
 			</div>
+
+			{/* toaster container */}
+			<Toaster richColors position="top-right" />
 		</BrowserRouter>
 	);
 };
