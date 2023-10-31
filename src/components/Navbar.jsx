@@ -22,7 +22,7 @@ const Navbar = () => {
 						window.scrollTo(0, 0);
 					}}
 				>
-					<img src="/logo.svg" alt="logo" className="object-contain w-9 h-9" />
+					<img src="/logo.png" alt="logo" className="object-contain w-9 h-9" />
 					<p className="text-white text-[18px] font-bold cursor-pointer">
 						Minhaz <span className="sm:inline-block hidden">| Rabbi</span>
 					</p>
