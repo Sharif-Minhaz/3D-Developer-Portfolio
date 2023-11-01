@@ -17,7 +17,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 					scale: 1,
 					speed: 450,
 				}}
-				className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full group"
+				className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full transition-all group"
 			>
 				<div className="relative w-full h-[230px]">
 					<img
@@ -39,7 +39,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 						</div>
 					</div>
 
-					<div className="absolute inset-0 top-12 flex justify-end m-3 card-img_hover opacity-0 transition-all group-hover:opacity-100">
+					<div className="absolute inset-0 top-12 flex justify-end m-3 card-img_hover opacity-100 sm:opacity-0 transition-all sm:group-hover:opacity-100">
 						<div
 							onClick={() => window.open(live_link, "_blank")}
 							className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"

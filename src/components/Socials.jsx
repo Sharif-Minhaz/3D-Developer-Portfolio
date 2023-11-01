@@ -4,19 +4,19 @@ import { styles } from "../styles";
 
 export default function Socials() {
 	return (
-		<div className="mt-[100px]">
+		<div className="mt-20 sm:mt-[100px]">
 			<p className={`${styles.sectionSubText} mb-10`}>Social Networks</p>
 			<div className="flex flex-wrap gap-10 justify-between items-center">
 				<div className="flex flex-wrap gap-6">
 					{socialLinks.map((social) => (
-						<Tilt key={social.id}>
+						<Tilt key={social.id} className="transition-all">
 							<div
 								onClick={() => window.open(social.link, "_blank")}
-								className="cursor-pointer bg-tertiary p-3 shadow-social rounded-xl"
+								className="cursor-pointer bg-tertiary p-2 xs:p-3 shadow-social rounded-xl"
 							>
 								<img
 									draggable={false}
-									className="w-[50px] h-[50px] object-contain"
+									className="w-10 h-10 xs:w-[50px] xs:h-[50px] object-contain"
 									src={social.icon}
 									alt={social.title}
 								/>

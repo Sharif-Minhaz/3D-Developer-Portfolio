@@ -16,7 +16,7 @@ const ServiceCard = ({ index, title, icon }) => (
 			scale: 1,
 			speed: 450,
 		}}
-		className="xs:w-[250px] w-full"
+		className="xs:w-[250px] w-full transition-all"
 	>
 		<motion.div
 			variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -63,9 +63,7 @@ const About = () => {
 				))}
 			</div>
 
-			<div>
-				<Socials />
-			</div>
+			<Socials />
 		</>
 	);
 };
