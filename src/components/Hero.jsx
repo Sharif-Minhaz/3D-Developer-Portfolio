@@ -8,7 +8,7 @@ const Hero = () => {
 	const isMobile = useMobileScreen();
 
 	return (
-		<section className="relative w-full h-screen mx-auto">
+		<section className="relative w-full h-screen mx-auto overflow-x-hidden">
 			<div
 				className={`${styles.paddingX} inset-0 absolute top-[70px] max-w-7xl mx-auto items-start justify-center flex gap-5`}
 			>
@@ -37,10 +37,10 @@ const Hero = () => {
 			{!isMobile ? (
 				<ComputersCanvas />
 			) : (
-				<div className="w-full overflow-hidden">
+				<div className="w-full">
 					<img
 						draggable={false}
-						className="absolute bottom-[100px] scale-[1.18]"
+						className="absolute bottom-[120px] scale-[1.18] inline-block"
 						src="/desktop_pc/fallback-desktop.png"
 						alt="my-desktop"
 					/>
