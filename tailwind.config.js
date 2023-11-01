@@ -14,12 +14,16 @@ export default {
 			},
 			boxShadow: {
 				card: "0px 35px 120px -15px #211e35",
+				social: ["2px 2px 2px #00000010", "inset 2px 2px 10px #00000010"],
 			},
 			screens: {
 				xs: "450px",
 			},
 			backgroundImage: {
 				"hero-pattern": "url('/src/assets/herobg.png')",
+			},
+			animation: {
+				social: "socialAnimate 3s linear infinite",
 			},
 		},
 	},

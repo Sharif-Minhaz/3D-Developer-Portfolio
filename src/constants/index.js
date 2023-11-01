@@ -41,6 +41,34 @@ export const navLinks = [
 	},
 ];
 
+const socialLinks = [
+	{
+		id: "gmail",
+		title: "Gmail",
+		link: "mailto:sharifmdminhazurrahman@email.com",
+		icon: "/social/gmail.svg",
+	},
+	{
+		id: "github",
+		title: "Github",
+		link: "https://github.com/Sharif-Minhaz",
+		icon: "/social/github.svg",
+	},
+	{
+		id: "linked-in",
+		title: "Linked In",
+		link: "https://www.linkedin.com/in/minhaz-rabbi-614724205/",
+		icon: "/social/linkedin.svg",
+	},
+
+	{
+		id: "facebook",
+		title: "Facebook",
+		link: "https://www.facebook.com/sharif.mdminhaz/",
+		icon: "/social/facebook.svg",
+	},
+];
+
 const services = [
 	{
 		title: "Web Developer",
@@ -295,4 +323,4 @@ const projects = [
 	},
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, socialLinks, experiences, testimonials, projects };

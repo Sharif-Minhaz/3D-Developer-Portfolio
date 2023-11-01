@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
+import Socials from "./Socials";
 
 // eslint-disable-next-line react-refresh/only-export-components
 const ServiceCard = ({ index, title, icon }) => (
@@ -60,6 +61,10 @@ const About = () => {
 				{services.map((service, index) => (
 					<ServiceCard key={index} {...service} />
 				))}
+			</div>
+
+			<div>
+				<Socials />
 			</div>
 		</>
 	);
