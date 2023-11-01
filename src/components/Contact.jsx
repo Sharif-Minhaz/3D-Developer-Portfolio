@@ -66,44 +66,47 @@ const Contact = () => {
 					<label className="flex flex-col">
 						<span className="text-white font-medium mb-4">Your Name</span>
 						<input
+							disabled={loading}
 							type="text"
 							name="name"
 							required
 							value={form.name}
 							onChange={handleChange}
 							placeholder="What's your good name?"
-							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+							className="bg-tertiary disabled:bg-slate-900 disabled:cursor-not-allowed disabled:text-slate-500 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
 					<label className="flex flex-col">
 						<span className="text-white font-medium mb-4">Your email</span>
 						<input
+							disabled={loading}
 							type="email"
 							name="email"
 							value={form.email}
 							required
 							onChange={handleChange}
 							placeholder="What's your web address?"
-							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+							className="bg-tertiary disabled:bg-slate-900 disabled:cursor-not-allowed disabled:text-slate-500 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
 					<label className="flex flex-col">
 						<span className="text-white font-medium mb-4">Your Message</span>
 						<textarea
+							disabled={loading}
 							rows={7}
 							name="message"
 							value={form.message}
 							required
 							onChange={handleChange}
 							placeholder="What you want to say?"
-							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+							className="bg-tertiary disabled:bg-slate-900 disabled:cursor-not-allowed disabled:text-slate-500 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
 
 					<button
 						disabled={loading}
 						type="submit"
-						className="bg-tertiary disabled:bg-slate-600 active:shadow-none py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+						className="bg-tertiary disabled:bg-slate-600 disabled:cursor-not-allowed active:shadow-none py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
 					>
 						{loading ? "Sending..." : "Send"}
 					</button>
@@ -112,7 +115,7 @@ const Contact = () => {
 
 			<motion.div
 				variants={slideIn("right", "tween", 0.2, 1)}
-				className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] "
+				className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
 			>
 				<EarthCanvas />
 			</motion.div>

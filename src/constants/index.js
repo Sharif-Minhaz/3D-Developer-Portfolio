@@ -45,7 +45,7 @@ const socialLinks = [
 	{
 		id: "gmail",
 		title: "Gmail",
-		link: "mailto:smmr.career@email.com?subject=About work",
+		link: "mailto:smmr.career@gmail.com?subject=About work",
 		icon: "/social/gmail.svg",
 	},
 	{
