@@ -2,31 +2,10 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-import { useEffect, useState } from "react";
+import { useMobileScreen } from "../hooks/useMobileScreen";
 
 const Hero = () => {
-	const [isMobile, setIsMobile] = useState(false);
-
-	useEffect(() => {
-		// Add a listener for changes to the screen size
-		const mediaQuery = window.matchMedia("(max-width: 500px)");
-
-		// Set the initial value of the `isMobile` state variable
-		setIsMobile(mediaQuery.matches);
-
-		// Define a callback function to handle changes to the media query
-		const handleMediaQueryChange = (event) => {
-			setIsMobile(event.matches);
-		};
-
-		// Add the callback function as a listener for changes to the media query
-		mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-		// Remove the listener when the component is unmounted
-		return () => {
-			mediaQuery.removeEventListener("change", handleMediaQueryChange);
-		};
-	}, []);
+	const isMobile = useMobileScreen();
 
 	return (
 		<section className="relative w-full h-screen mx-auto">
@@ -42,7 +21,7 @@ const Hero = () => {
 					<div className="w-1 sm:h-[290px] h-40 violet-gradient" />
 				</div>
 
-				<div className={`${isMobile ? "mt-10" : ""}`}>
+				<div className={`${isMobile ? "mt-12" : ""}`}>
 					<h2 className={`${styles.heroHeadText} text-white`}>
 						Hi, I&apos;m <span className="text-[#914eff]">Minhaz</span>{" "}
 					</h2>
@@ -58,9 +37,10 @@ const Hero = () => {
 			{!isMobile ? (
 				<ComputersCanvas />
 			) : (
-				<div className="w-full">
+				<div className="w-full overflow-hidden">
 					<img
-						className="absolute bottom-10 scale-[1.18]"
+						draggable={false}
+						className="absolute bottom-[100px] scale-[1.18]"
 						src="/desktop_pc/fallback-desktop.png"
 						alt="my-desktop"
 					/>
