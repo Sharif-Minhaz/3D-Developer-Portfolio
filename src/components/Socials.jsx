@@ -6,8 +6,8 @@ export default function Socials() {
 	return (
 		<div className="mt-[100px]">
 			<p className={`${styles.sectionSubText} mb-10`}>Social Networks</p>
-			<div className="flex justify-between items-center">
-				<div className="flex gap-6">
+			<div className="flex flex-wrap gap-10 justify-between items-center">
+				<div className="flex flex-wrap gap-6">
 					{socialLinks.map((social) => (
 						<Tilt key={social.id}>
 							<div
