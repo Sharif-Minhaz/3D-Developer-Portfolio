@@ -175,7 +175,7 @@ const experiences = [
 		company_name: "Damex",
 		icon: damex,
 		iconBg: "#E6DEDD",
-		date: "April 2023 - Present",
+		date: "July 2023 - Present",
 		points: [
 			"Developing and maintaining web applications using MERN stack related technologies.",
 			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -188,7 +188,7 @@ const experiences = [
 const testimonials = [
 	{
 		testimonial:
-			"I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+			"I thought it was impossible to make a website as beautiful as our product, but Minhaz proved me wrong.",
 		name: "Kelly Kennedy",
 		designation: "CFO",
 		company: "Acme Co",
@@ -196,7 +196,7 @@ const testimonials = [
 	},
 	{
 		testimonial:
-			"I've never met a web developer who truly cares about their clients' success like Rick does.",
+			"I've never met a web developer who truly cares about their clients' success like Minhaz does.",
 		name: "Chris Brown",
 		designation: "COO",
 		company: "DEF Corp",
@@ -204,7 +204,7 @@ const testimonials = [
 	},
 	{
 		testimonial:
-			"After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+			"After Minhaz optimized our website, our traffic increased by 50%. We can't thank them enough!",
 		name: "Carl Coleman",
 		designation: "CTO",
 		company: "456 Enterprises",
